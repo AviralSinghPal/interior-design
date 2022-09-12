@@ -7,28 +7,39 @@
 }
 body  {
   background-image: url(./images/bg_for_10.jpg);
+  /* background-position: center; */
   /* background-position: ; */
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   font-family: 'Poppins', sans-serif;
 }
 .logo{
-  font-size: 30px;
-  margin: 1em;
+  font-size: 25px;
+  margin-left: 10px;
+  /* margin: 1em; */
+  display: inline-block;
+}
+.burger{
+  display: none;
+  font-size: 20px;
+  position: relative;
+  top: -20px;
 }
 nav{
   float: right;
-  width: 1000px;
+  width: auto;
   color: aliceblue;
   font-size: 20px;
   display: flex;
   align-items: center;
   text-align:left;
-  align-content: space-between;
+  align-content: space-evenly;
+  gap: 40px;
+  
   /* border: 2px solid white; */
 }
 nav a{
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 nav a:hover{
@@ -137,4 +148,84 @@ nav a:hover{
   width: 10px;
   height: 10px;
   border-radius: 10px;
+}
+@media screen and (max-width:1150px) {
+  .line{
+    /* display: none; */
+    width: 800px;
+  }
+  .header-text{
+    position: relative;
+    left: auto;
+    top: 100px;
+    font-size: 35px;
+    margin: 40px;
+  }
+  .burger{
+    display: inline-block;
+  }
+  nav{
+    gap: 20px
+  }
+  .box1{
+    position: relative;
+    bottom: -100px;
+    left: 50px;
+    border: none;
+    width: 250px;
+    background: rgba(243, 243, 243,0.3);
+    padding: 20px;
+  }
+  .box2{
+    position: relative;
+    bottom: 70px;
+    left: 400px;
+    border: none;
+    width: 250px;
+    background: rgba(243, 243, 243,0.3);
+    padding: 20px;
+  }
+  .blob1{
+    display: none;
+  }
+  .blob{
+    display:none;
+  }
+
+}
+@media screen and (max-width:950px) {
+
+  .line{
+    display: none;
+  }
+  nav a{
+    display: none;
+  }
+  .box1{
+    position: relative;
+    bottom: -100px;
+    left: 50px;
+    border: none;
+    width: 250px;
+    background: rgba(243, 243, 243,0.3);
+    padding: 20px;
+  }
+  .box2{
+    position: relative;
+    bottom: -120px;
+    left: 50px;
+    border: none;
+    width: 250px;
+    background: rgba(243, 243, 243,0.3);
+    padding: 20px;
+  }
+  .blob1{
+    display: none;
+  }
+  .blob{
+    display:none;
+  }
+  body{
+    background-size: 2000px;
+  }
 }
